@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="40.443052">
+<testcase classname="To check login functionality of facebook application" name="To validate the login function using valid and invalid credentials" time="9.785174">
+<system-out><![CDATA[Given User must be in facebook login page...................................passed
+When User enter username in "greens" usernameFeild and  password in "greens@123" passwordnameFeild.passed
+And User click login button.................................................passed
+Then user must be in facebook credential page...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check login functionality of facebook application" name="To validate the login function using valid and invalid credentials 2" time="8.612671">
+<system-out><![CDATA[Given User must be in facebook login page...................................passed
+When User enter username in "java" usernameFeild and  password in "java@123" passwordnameFeild.passed
+And User click login button.................................................passed
+Then user must be in facebook credential page...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check login functionality of facebook application" name="To validate the login function using valid and invalid credentials 3" time="8.609032">
+<system-out><![CDATA[Given User must be in facebook login page...................................passed
+When User enter username in "python" usernameFeild and  password in "python@123" passwordnameFeild.passed
+And User click login button.................................................passed
+Then user must be in facebook credential page...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the facebook login function" name="To validate login function using invalid credentials" time="8.556525">
+<system-out><![CDATA[Given User sholud be in facebook login page.................................passed
+When User enter username and password.......................................passed
+And User clicked login button...............................................passed
+Then User quit browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To check the facebook login function" name="To validate forgot password functionality" time="4.87965">
+<system-out><![CDATA[Given User sholud be in facebook login page.................................passed
+When User click forget password button......................................passed
+And User enter mobile number................................................passed
+And User click search button................................................passed
+Then User must be in rest your password page................................passed
+]]></system-out>
+</testcase>
+</testsuite>

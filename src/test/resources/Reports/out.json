@@ -1,0 +1,991 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-11T18:21:29.539Z",
+        "before": [
+          {
+            "result": {
+              "duration": 819800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 2506879200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserLaunch()"
+            }
+          },
+          {
+            "result": {
+              "duration": 140364500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.maxBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 14015400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserWait()"
+            }
+          },
+          {
+            "result": {
+              "duration": 111100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeRegression()"
+            }
+          },
+          {
+            "result": {
+              "duration": 80300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSmoke()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "To validate the login function using valid and invalid credentials",
+        "description": "",
+        "id": "to-check-login-functionality-of-facebook-application;to-validate-the-login-function-using-valid-and-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 218900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSmoke()"
+            }
+          },
+          {
+            "result": {
+              "duration": 153600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterRegression()"
+            }
+          },
+          {
+            "result": {
+              "duration": 129400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 476600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShotAuto(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 153900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShotManually(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 693004100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1116369700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User must be in facebook login page",
+            "match": {
+              "location": "StepDefinition.user_must_be_in_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 178825400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter username in \"greens\" usernameFeild and  password in \"greens@123\" passwordnameFeild",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"greens\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"greens@123\"",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefinition.user_enter_username_in_usernameFeild_and_password_in_passwordnameFeild(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5082375000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click login button",
+            "match": {
+              "location": "StepDefinition.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1245800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user must be in facebook credential page",
+            "match": {
+              "location": "StepDefinition.user_must_be_in_facebook_credential_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-11T18:21:39.328Z",
+        "before": [
+          {
+            "result": {
+              "duration": 94500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1315456300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserLaunch()"
+            }
+          },
+          {
+            "result": {
+              "duration": 145940600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.maxBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 13594400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserWait()"
+            }
+          },
+          {
+            "result": {
+              "duration": 79400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeRegression()"
+            }
+          },
+          {
+            "result": {
+              "duration": 60500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSmoke()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "To validate the login function using valid and invalid credentials",
+        "description": "",
+        "id": "to-check-login-functionality-of-facebook-application;to-validate-the-login-function-using-valid-and-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 125300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSmoke()"
+            }
+          },
+          {
+            "result": {
+              "duration": 121300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterRegression()"
+            }
+          },
+          {
+            "result": {
+              "duration": 119200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 146600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShotAuto(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 139500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShotManually(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 670115400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1213996900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User must be in facebook login page",
+            "match": {
+              "location": "StepDefinition.user_must_be_in_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 160284500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter username in \"java\" usernameFeild and  password in \"java@123\" passwordnameFeild",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"java\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"java@123\"",
+                  "offset": 61
+                }
+              ],
+              "location": "StepDefinition.user_enter_username_in_usernameFeild_and_password_in_passwordnameFeild(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5082159900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click login button",
+            "match": {
+              "location": "StepDefinition.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1118600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user must be in facebook credential page",
+            "match": {
+              "location": "StepDefinition.user_must_be_in_facebook_credential_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-11T18:21:47.941Z",
+        "before": [
+          {
+            "result": {
+              "duration": 94500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1316368900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserLaunch()"
+            }
+          },
+          {
+            "result": {
+              "duration": 137293500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.maxBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 13267100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserWait()"
+            }
+          },
+          {
+            "result": {
+              "duration": 126400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeRegression()"
+            }
+          },
+          {
+            "result": {
+              "duration": 62400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSmoke()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "To validate the login function using valid and invalid credentials",
+        "description": "",
+        "id": "to-check-login-functionality-of-facebook-application;to-validate-the-login-function-using-valid-and-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 101100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSmoke()"
+            }
+          },
+          {
+            "result": {
+              "duration": 93000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterRegression()"
+            }
+          },
+          {
+            "result": {
+              "duration": 91400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 119900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShotAuto(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 111700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShotManually(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 696242200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1191406900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User must be in facebook login page",
+            "match": {
+              "location": "StepDefinition.user_must_be_in_facebook_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 160563600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter username in \"python\" usernameFeild and  password in \"python@123\" passwordnameFeild",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"python\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"python@123\"",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefinition.user_enter_username_in_usernameFeild_and_password_in_passwordnameFeild(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5084124600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click login button",
+            "match": {
+              "location": "StepDefinition.user_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 872400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user must be in facebook credential page",
+            "match": {
+              "location": "StepDefinition.user_must_be_in_facebook_credential_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "To check login functionality of facebook application",
+    "description": "",
+    "id": "to-check-login-functionality-of-facebook-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/LoginFunction.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1166633900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User sholud be in facebook login page",
+            "match": {
+              "location": "StepDefinition2.user_sholud_be_in_facebook_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-11T18:21:56.551Z",
+        "before": [
+          {
+            "result": {
+              "duration": 87300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1254025600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserLaunch()"
+            }
+          },
+          {
+            "result": {
+              "duration": 145663100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.maxBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 14207900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserWait()"
+            }
+          },
+          {
+            "result": {
+              "duration": 138100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSmoke()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "To validate login function using invalid credentials",
+        "description": "",
+        "id": "to-check-the-facebook-login-function;to-validate-login-function-using-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 58400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSmoke()"
+            }
+          },
+          {
+            "result": {
+              "duration": 43100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 50700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShotAuto(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 52500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShotManually(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 40200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 198971800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter username and password",
+            "match": {
+              "location": "StepDefinition2.user_enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5072181800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicked login button",
+            "match": {
+              "location": "StepDefinition2.user_clicked_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 695009900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User quit browser",
+            "match": {
+              "location": "StepDefinition2.user_quit_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginInvalid"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1262555400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User sholud be in facebook login page",
+            "match": {
+              "location": "StepDefinition2.user_sholud_be_in_facebook_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-11T18:22:05.108Z",
+        "before": [
+          {
+            "result": {
+              "duration": 59900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1321969600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserLaunch()"
+            }
+          },
+          {
+            "result": {
+              "duration": 132849000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.maxBrowser()"
+            }
+          },
+          {
+            "result": {
+              "duration": 14479300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.browserWait()"
+            }
+          },
+          {
+            "result": {
+              "duration": 128600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeSanity()"
+            }
+          },
+          {
+            "result": {
+              "duration": 54200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeRegression()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "To validate forgot password functionality",
+        "description": "",
+        "id": "to-check-the-facebook-login-function;to-validate-forgot-password-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 47100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSanity()"
+            }
+          },
+          {
+            "result": {
+              "duration": 40100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterRegression()"
+            }
+          },
+          {
+            "result": {
+              "duration": 34000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          },
+          {
+            "result": {
+              "duration": 94100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShotAuto(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 59500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShotManually(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 682151900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1273193800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click forget password button",
+            "match": {
+              "location": "StepDefinition2.user_click_forget_password_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74276000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enter mobile number",
+            "match": {
+              "location": "StepDefinition2.user_enter_mobile_number()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111022800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click search button",
+            "match": {
+              "location": "StepDefinition2.user_click_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 527400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User must be in rest your password page",
+            "match": {
+              "location": "StepDefinition2.user_must_be_in_rest_your_password_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginInvalid"
+          },
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "To check the facebook login function",
+    "description": "",
+    "id": "to-check-the-facebook-login-function",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/loginValid.feature",
+    "tags": [
+      {
+        "name": "@loginInvalid",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>facebook</td>
+            <td>11 May 2022, 23:49</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Hooks.afterRegression()</td>
+              <td>4</td>
+              <td class="duration" data-value="122800">0.000</td>
+              <td class="duration" data-value="122800">0.000</td>
+              <td class="duration" data-value="491200">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.afterSanity()</td>
+              <td>1</td>
+              <td class="duration" data-value="80100">0.000</td>
+              <td class="duration" data-value="80100">0.000</td>
+              <td class="duration" data-value="80100">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.afterScenario()</td>
+              <td>5</td>
+              <td class="duration" data-value="106980">0.000</td>
+              <td class="duration" data-value="106980">0.000</td>
+              <td class="duration" data-value="534900">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.afterSmoke()</td>
+              <td>4</td>
+              <td class="duration" data-value="137975">0.000</td>
+              <td class="duration" data-value="137975">0.000</td>
+              <td class="duration" data-value="551900">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.beforeRegression()</td>
+              <td>4</td>
+              <td class="duration" data-value="72400">0.000</td>
+              <td class="duration" data-value="72400">0.000</td>
+              <td class="duration" data-value="289600">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.beforeSanity()</td>
+              <td>1</td>
+              <td class="duration" data-value="104900">0.000</td>
+              <td class="duration" data-value="104900">0.000</td>
+              <td class="duration" data-value="104900">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.beforeScenario()</td>
+              <td>5</td>
+              <td class="duration" data-value="224960">0.000</td>
+              <td class="duration" data-value="224960">0.000</td>
+              <td class="duration" data-value="1124800">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.beforeSmoke()</td>
+              <td>4</td>
+              <td class="duration" data-value="101600">0.000</td>
+              <td class="duration" data-value="101600">0.000</td>
+              <td class="duration" data-value="406400">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.browserLaunch()</td>
+              <td>5</td>
+              <td class="duration" data-value="1574967380">1.574</td>
+              <td class="duration" data-value="1574967380">2.716</td>
+              <td class="duration" data-value="7874836900">7.874</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.browserWait()</td>
+              <td>5</td>
+              <td class="duration" data-value="14021040">0.014</td>
+              <td class="duration" data-value="14021040">0.014</td>
+              <td class="duration" data-value="70105200">0.070</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.maxBrowser()</td>
+              <td>5</td>
+              <td class="duration" data-value="139770240">0.139</td>
+              <td class="duration" data-value="139770240">0.145</td>
+              <td class="duration" data-value="698851200">0.698</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.quitBrowser()</td>
+              <td>5</td>
+              <td class="duration" data-value="560270380">0.560</td>
+              <td class="duration" data-value="560270380">0.708</td>
+              <td class="duration" data-value="2801351900">2.801</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.screenShotAuto(Scenario)</td>
+              <td>5</td>
+              <td class="duration" data-value="48318180">0.048</td>
+              <td class="duration" data-value="48318180">0.240</td>
+              <td class="duration" data-value="241590900">0.241</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.screenShotManually(Scenario)</td>
+              <td>5</td>
+              <td class="duration" data-value="42184320">0.042</td>
+              <td class="duration" data-value="42184320">0.210</td>
+              <td class="duration" data-value="210921600">0.210</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.user_click_login_button()</td>
+              <td>3</td>
+              <td class="duration" data-value="5075426900">5.075</td>
+              <td class="duration" data-value="5075426900">5.081</td>
+              <td class="duration" data-value="15226280700">15.226</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.user_enter_username_in_usernameFeild_and_password_in_passwordnameFeild(String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="160198500">0.160</td>
+              <td class="duration" data-value="160198500">0.174</td>
+              <td class="duration" data-value="480595500">0.480</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.user_must_be_in_facebook_credential_page()</td>
+              <td>3</td>
+              <td class="duration" data-value="1116566">0.001</td>
+              <td class="duration" data-value="1116566">0.001</td>
+              <td class="duration" data-value="3349700">0.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition.user_must_be_in_facebook_login_page()</td>
+              <td>3</td>
+              <td class="duration" data-value="1251124766">1.251</td>
+              <td class="duration" data-value="1251124766">1.265</td>
+              <td class="duration" data-value="3753374300">3.753</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition2.user_click_forget_password_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1277544400">1.277</td>
+              <td class="duration" data-value="1277544400">1.277</td>
+              <td class="duration" data-value="1277544400">1.277</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition2.user_click_search_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="10087419200">10.087</td>
+              <td class="duration" data-value="10087419200">10.087</td>
+              <td class="duration" data-value="10087419200">10.087</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition2.user_clicked_login_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="5081308600">5.081</td>
+              <td class="duration" data-value="5081308600">5.081</td>
+              <td class="duration" data-value="5081308600">5.081</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition2.user_enter_mobile_number()</td>
+              <td>1</td>
+              <td class="duration" data-value="116645800">0.116</td>
+              <td class="duration" data-value="116645800">0.116</td>
+              <td class="duration" data-value="116645800">0.116</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition2.user_enter_username_and_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="162862300">0.162</td>
+              <td class="duration" data-value="162862300">0.162</td>
+              <td class="duration" data-value="162862300">0.162</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition2.user_must_be_in_rest_your_password_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="659700">0.000</td>
+              <td class="duration" data-value="659700">0.000</td>
+              <td class="duration" data-value="659700">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition2.user_quit_browser()</td>
+              <td>1</td>
+              <td class="duration" data-value="708755100">0.708</td>
+              <td class="duration" data-value="708755100">0.708</td>
+              <td class="duration" data-value="708755100">0.708</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinition2.user_sholud_be_in_facebook_login_page()</td>
+              <td>2</td>
+              <td class="duration" data-value="1201085850">1.201</td>
+              <td class="duration" data-value="1201085850">1.235</td>
+              <td class="duration" data-value="2402171700">2.402</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>26</td>
+            <td>79</td>
+            <td class="duration">0.648</td>
+            <td class="duration">15.226</td>
+            <td class="duration">51.202</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
